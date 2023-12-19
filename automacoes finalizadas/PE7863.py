@@ -1,13 +1,13 @@
 import pyautogui
 import time
 
-with open('csv/INATIVAR 15 08 23.csv','r') as arquivo:
+with open('Arquivos_CSV\INATIVAR 11-10-23.csv','r') as arquivo:
         for linha in arquivo:
             item = linha.split(';')[0]
-            pyautogui.doubleClick(203, 255,duration=1)
+            pyautogui.doubleClick(180, 239,duration=0.2)
             pyautogui.write(item)
             pyautogui.press('enter')
-            pyautogui.click(254, 518,duration=1)
+            pyautogui.click(229, 502,duration=0.2)
             
 
 

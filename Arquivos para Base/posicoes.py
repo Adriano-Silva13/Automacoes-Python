@@ -3,9 +3,10 @@ import time
 import keyboard
 
 pontos = []
-print("Defina os Pontos a Ser Mapeados")
+
 def mapear_ponto():
     while True:
+        print("Defina os Pontos a Ser Mapeados")
         if keyboard.is_pressed('esc'):  # Pode ser a tecla que você quiser
             x, y = pyautogui.position()
             pontos.append((x, y))
